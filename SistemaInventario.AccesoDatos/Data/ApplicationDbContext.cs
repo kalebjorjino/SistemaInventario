@@ -1,0 +1,20 @@
+﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore;
+using SistemaInventario.Modelos;
+using System.Reflection;
+
+namespace SistemaInventario.AccesoDatos.Data
+{
+    public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : IdentityDbContext(options)
+    {
+    
+
+    public DbSet<Bodega> Bodegas { get; set; }
+
+        protected override void OnModelCreating(ModelBuilder Builder)
+        {
+            base.OnModelCreating(Builder);
+            Builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+        }
+    }
+}

@@ -112,6 +112,52 @@
           "buildMultiTargeting/Microsoft.AspNetCore.Identity.UI.targets": {}
         }
       },
+      "Microsoft.AspNetCore.Mvc.Razor.Extensions/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Razor.Language": "6.0.0",
+          "Microsoft.CodeAnalysis.Razor": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll": {}
+        }
+      },
+      "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/10.0.15": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Mvc.Razor.Extensions": "6.0.0",
+          "Microsoft.CodeAnalysis.Razor": "6.0.0",
+          "Microsoft.Extensions.DependencyModel": "10.0.15"
+        },
+        "compile": {
+          "lib/net10.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net10.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ],
+        "build": {
+          "buildTransitive/net10.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.targets": {}
+        }
+      },
+      "Microsoft.AspNetCore.Razor.Language/6.0.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll": {}
+        }
+      },
       "Microsoft.Bcl.AsyncInterfaces/8.0.0": {
         "type": "package",
         "compile": {
@@ -320,6 +366,20 @@
           "lib/net9.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll": {
             "locale": "zh-Hant"
           }
+        }
+      },
+      "Microsoft.CodeAnalysis.Razor/6.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.AspNetCore.Razor.Language": "6.0.0",
+          "Microsoft.CodeAnalysis.CSharp": "4.0.0",
+          "Microsoft.CodeAnalysis.Common": "4.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.CodeAnalysis.Razor.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.CodeAnalysis.Razor.dll": {}
         }
       },
       "Microsoft.CodeAnalysis.Workspaces.Common/5.0.0": {
@@ -1159,6 +1219,53 @@
         "build": {
           "buildTransitive/net8.0/_._": {}
         }
+      },
+      "SistemaInventario.AccesoDatos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "10.0.15",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "10.0.15",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "10.0.15",
+          "Microsoft.EntityFrameworkCore.SqlServer": "10.0.15",
+          "SistemaInventario.Modelos": "1.0.0",
+          "SistemaInventario.Utilidades": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SistemaInventario.AccesoDatos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SistemaInventario.AccesoDatos.dll": {}
+        }
+      },
+      "SistemaInventario.Modelos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "10.0.15",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "10.0.15",
+          "SistemaInventario.Utilidades": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SistemaInventario.Modelos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SistemaInventario.Modelos.dll": {}
+        }
+      },
+      "SistemaInventario.Utilidades/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v10.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "10.0.15",
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": "10.0.15"
+        },
+        "compile": {
+          "bin/placeholder/SistemaInventario.Utilidades.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SistemaInventario.Utilidades.dll": {}
+        }
       }
     }
   },
@@ -1375,6 +1482,52 @@
         "staticwebassets/V5/lib/jquery/dist/jquery.slim.js",
         "staticwebassets/V5/lib/jquery/dist/jquery.slim.min.js",
         "staticwebassets/V5/lib/jquery/dist/jquery.slim.min.map"
+      ]
+    },
+    "Microsoft.AspNetCore.Mvc.Razor.Extensions/6.0.0": {
+      "sha512": "M0h+ChPgydX2xY17agiphnAVa/Qh05RAP8eeuqGGhQKT10claRBlLNO6d2/oSV8zy0RLHzwLnNZm5xuC/gckGA==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.mvc.razor.extensions/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Mvc.Razor.Extensions.dll",
+        "microsoft.aspnetcore.mvc.razor.extensions.6.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.razor.extensions.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation/10.0.15": {
+      "sha512": "lQ256tjIvHTcVEDZ7eWOgoiL8RT6fNUQ6Ha06XqKHsLDKr+YOH31FAUaB8rsPXaHBnqhNpKlXEzfNY5/Z2MOIg==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.mvc.razor.runtimecompilation/10.0.15",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "build/net10.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.targets",
+        "buildTransitive/net10.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.targets",
+        "lib/net10.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.dll",
+        "lib/net10.0/Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation.xml",
+        "microsoft.aspnetcore.mvc.razor.runtimecompilation.10.0.15.nupkg.sha512",
+        "microsoft.aspnetcore.mvc.razor.runtimecompilation.nuspec"
+      ]
+    },
+    "Microsoft.AspNetCore.Razor.Language/6.0.0": {
+      "sha512": "yCtBr1GSGzJrrp1NJUb4ltwFYMKHw/tJLnIDvg9g/FnkGIEzmE19tbCQqXARIJv5kdtBgsoVIdGLL+zmjxvM/A==",
+      "type": "package",
+      "path": "microsoft.aspnetcore.razor.language/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard2.0/Microsoft.AspNetCore.Razor.Language.dll",
+        "microsoft.aspnetcore.razor.language.6.0.0.nupkg.sha512",
+        "microsoft.aspnetcore.razor.language.nuspec"
       ]
     },
     "Microsoft.Bcl.AsyncInterfaces/8.0.0": {
@@ -2310,6 +2463,20 @@
         "lib/netstandard2.0/zh-Hant/Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll",
         "microsoft.codeanalysis.csharp.workspaces.5.0.0.nupkg.sha512",
         "microsoft.codeanalysis.csharp.workspaces.nuspec"
+      ]
+    },
+    "Microsoft.CodeAnalysis.Razor/6.0.0": {
+      "sha512": "uqdzuQXxD7XrJCbIbbwpI/LOv0PBJ9VIR0gdvANTHOfK5pjTaCir+XcwvYvBZ5BIzd0KGzyiamzlEWw1cK1q0w==",
+      "type": "package",
+      "path": "microsoft.codeanalysis.razor/6.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netstandard2.0/Microsoft.CodeAnalysis.Razor.dll",
+        "microsoft.codeanalysis.razor.6.0.0.nupkg.sha512",
+        "microsoft.codeanalysis.razor.nuspec"
       ]
     },
     "Microsoft.CodeAnalysis.Workspaces.Common/5.0.0": {
@@ -3401,6 +3568,21 @@
         "system.security.cryptography.protecteddata.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "SistemaInventario.AccesoDatos/1.0.0": {
+      "type": "project",
+      "path": "../SistemaInventario.AccesoDatos/SistemaInventario.AccesoDatos.csproj",
+      "msbuildProject": "../SistemaInventario.AccesoDatos/SistemaInventario.AccesoDatos.csproj"
+    },
+    "SistemaInventario.Modelos/1.0.0": {
+      "type": "project",
+      "path": "../SistemaInventario.Modelos/SistemaInventario.Modelos.csproj",
+      "msbuildProject": "../SistemaInventario.Modelos/SistemaInventario.Modelos.csproj"
+    },
+    "SistemaInventario.Utilidades/1.0.0": {
+      "type": "project",
+      "path": "../SistemaInventario.Utilidades/SistemaInventario.Utilidades.csproj",
+      "msbuildProject": "../SistemaInventario.Utilidades/SistemaInventario.Utilidades.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3408,9 +3590,13 @@
       "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore >= 10.0.15",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 10.0.15",
       "Microsoft.AspNetCore.Identity.UI >= 10.0.15",
+      "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation >= 10.0.15",
       "Microsoft.EntityFrameworkCore.Design >= 10.0.15",
       "Microsoft.EntityFrameworkCore.SqlServer >= 10.0.15",
-      "Microsoft.EntityFrameworkCore.Tools >= 10.0.15"
+      "Microsoft.EntityFrameworkCore.Tools >= 10.0.15",
+      "SistemaInventario.AccesoDatos >= 1.0.0",
+      "SistemaInventario.Modelos >= 1.0.0",
+      "SistemaInventario.Utilidades >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3445,7 +3631,17 @@
         "net10.0": {
           "framework": "net10.0",
           "targetAlias": "net10.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\HRC-SOPORTE-01\\source\\repos\\SistemaInventarioV6\\SistemaInventario.AccesoDatos\\SistemaInventario.AccesoDatos.csproj": {
+              "projectPath": "C:\\Users\\HRC-SOPORTE-01\\source\\repos\\SistemaInventarioV6\\SistemaInventario.AccesoDatos\\SistemaInventario.AccesoDatos.csproj"
+            },
+            "C:\\Users\\HRC-SOPORTE-01\\source\\repos\\SistemaInventarioV6\\SistemaInventario.Modelos\\SistemaInventario.Modelos.csproj": {
+              "projectPath": "C:\\Users\\HRC-SOPORTE-01\\source\\repos\\SistemaInventarioV6\\SistemaInventario.Modelos\\SistemaInventario.Modelos.csproj"
+            },
+            "C:\\Users\\HRC-SOPORTE-01\\source\\repos\\SistemaInventarioV6\\SistemaInventario.Utilidades\\SistemaInventario.Utilidades.csproj": {
+              "projectPath": "C:\\Users\\HRC-SOPORTE-01\\source\\repos\\SistemaInventarioV6\\SistemaInventario.Utilidades\\SistemaInventario.Utilidades.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -3474,6 +3670,10 @@
             "version": "[10.0.15, )"
           },
           "Microsoft.AspNetCore.Identity.UI": {
+            "target": "Package",
+            "version": "[10.0.15, )"
+          },
+          "Microsoft.AspNetCore.Mvc.Razor.RuntimeCompilation": {
             "target": "Package",
             "version": "[10.0.15, )"
           },

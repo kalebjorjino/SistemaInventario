@@ -1,9 +1,11 @@
 using Microsoft.AspNetCore.Mvc;
-using SistemaInventarioV6.Models;
+using SistemaInventario.Modelos.Models;
 using System.Diagnostics;
 
-namespace SistemaInventarioV6.Controllers
+namespace SistemaInventarioV6.Areas.Inventario.Controllers
 {
+
+    [Area("Inventario")]
     public class HomeController : Controller
     {
         public IActionResult Index()
